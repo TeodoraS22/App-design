@@ -1,0 +1,170 @@
+
+/* Style the header with a grey background and some padding */
+  .startapp {
+    overflow: hidden;
+    padding: 250px 10px;
+  }
+ 
+  /* Style the header links */
+  .startapp a {
+    text-align: center;
+    /* padding: 3px; */
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 38px;
+    /* line-height: 1.4; */
+    font-size: 35px;
+    padding: 7px 20px;
+		left: 50%;
+		width: 210px;
+		border-radius: 20px;
+		color: white;
+		border: 5px solid transparent;
+		border-bottom-color: rgba(0, 0, 0, 0.425);
+		background: rgba(102, 100, 98, 0.877);
+		cursor: pointer;
+  }
+  /*container buton */
+  .container {
+    height: 200px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    /* border: 3px solid rgb(6, 87, 6);  */
+  }
+
+  .centrare {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+  
+  }
+  /*text button*/
+  .btn-startapp {
+     /* background:rgb(170, 102, 102); */
+     /* color: var(--color-black); */
+     font-family: "Georgia", Times, serif;
+
+
+  }
+  
+  /* Change the background color on mouse-over */
+  .startapp a:hover {
+     background-color: rgba(102, 100, 98, 0.616);  
+     color: black;
+  } 
+  
+  /* Float the link section to the right */
+  .startapp-right {
+    float: right;
+  }
+  
+  .startapp img {
+      display: block;
+      width: 13%;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+  .startapp a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  #notfound {
+    position: relative;
+    height: 100vh;
+  }
+  #notfound .notfound{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+  .notfound {
+    max-width: 920px;
+    width: 50%;
+    margin: auto;
+    line-height: 1.4;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 200px;   
+  }
+  .notfound .notfound-404 {
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: -1;
+  }
+
+  .notfound .notfound-404 h2{
+    font-family: "Maven Pro", sans-serif;
+    color: #ececec;
+    /* font-weight: 900; */
+    font-size: 350px;
+    position: absolute;
+    /* left: 50%; */
+    top: 100%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+
+  .notfound h2{
+    font-family: "Maven Pro", sans-serif;
+    font-size: 46px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* margin: 0px; */
+    
+  }
+
+  .notfound p {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 16px;
+    color:#000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 15px;
+    
+  }
+  .notfound a {
+    font-family: "Maven Pro", sans-serif; 
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 35px;
+    padding: 8px 20px;
+		border-radius: 20px;
+		color: white;
+		border: 5px solid transparent;
+		border-bottom-color: rgba(0,0,0,0.35);
+		background: rgba(134, 130, 126, 0.877);
+		cursor: pointer;  
+  }
+
+  .notfound a:hover {
+    background-color: rgba(102, 100, 98, 0.247);
+    border-color: rgba(102, 100, 98, 0.877);
+    color:rgba(102, 100, 98, 0.877);
+  }
+
+  @media only screen and (max-width: 480px){
+    .notfound .notfound-404 h1 {
+        font-size: 162px;
+    }
+    .notfound h2 { 
+        font-size: 26px;
+    }
+  }

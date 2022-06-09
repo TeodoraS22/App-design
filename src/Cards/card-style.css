@@ -1,0 +1,63 @@
+body {
+    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+    }
+
+    .card {
+        width: 30rem;
+        background-color: rgba(216, 214, 216, 0.705)
+        
+    }
+
+    .card:hover {
+        box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253)!important;
+    }
+    .card.body {
+        padding: 3rem 0 impor !important;
+    }
+    .card-text {
+        font-size: 1.2rem;
+        padding: 0.1rem 0.4rem;
+        text-align: center;
+        padding-bottom: 1.2rem;
+    }
+    .container-fluid .row {
+        padding-top: 0.8rem;
+        padding-left: 7rem;
+        padding-right: 1.5rem;
+        padding-bottom: 3rem;
+        
+    }
+    .overflow {
+        overflow: hidden;
+    }
+    .card-img-top {
+        transform: scale(1);
+        transition: transform 0.5s ease;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.5);
+        border-radius: 3rem;
+    }
+    
+    .card {
+        margin-bottom: 90px;
+        color: black;
+        border-radius: 3rem;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .btns {
+        display: flex;
+        gap: 3rem;
+        padding-left: 5.9rem;
+        padding-bottom: 1.5rem;
+    }
+  

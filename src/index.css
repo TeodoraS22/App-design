@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;600&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #796c5d33;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: rgba(255, 255, 255, 0.384);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-black: rgb(8, 8, 8);
+  --color-white: rgb(248, 245, 245);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url(../src/assets/asfalt-dark.png);
+}
+
+/* ================== GENERAL STYLES ==================== */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  /* color: var(--color-black); */
+  /* padding: 0.5rem 0.5rem; */
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-align: 15rem;
+  padding: 0.5rem 0.5rem;
+  text-decoration-line: underline;
+  text-indent: 50px;
+}
+
+h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  /* color: var(--color-black); */
+  padding: 0.5rem 0.5rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  text-align: center;
+  /* color: var(--color-black); */
+  padding: 0.5rem 0.5rem;
+}
+
+h5 {
+  font-weight: 1px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-weight: 1px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section {
+  margin-top: 8rem;
+  height: 100vh;
+}
+
+/* section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+} */
+
+.text-light {
+  color: var(--color-black);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-black);
+  font-family: "Georgia", Times, serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*===== MEDIA QUERIES (MEDIUM DEVICES) ==== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/*===== MEDIA QUERIES (SMALL DEVICES) ==== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  /* section > h2 {
+        margin-bottom: 2rem;
+    } */
+}
+
+/* span {
+    font-size: 40px;
+  }
+  
+  .dark-mode {
+    background-color: #1a1919;
+    color: #999;
+    height: 100%;
+    transition: background-color 0.25s ease-in-out;
+  }
+  
+  .light-mode {
+    background-color: #fff;
+    color: #333;
+    height: 100%;
+    transition: background-color 0.25s ease-in-out;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #19a2c1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+/* .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch-checkbox {
+    padding: 10px;
+  }
+   */
