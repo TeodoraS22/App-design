@@ -2,7 +2,7 @@ import React from 'react'
 import './game.css'
 import Header from '../Header/header'
 import Nav from '../../Nav/nav'
-
+/*
 image_array = [
   '1.jpg',
   '2.jpg',
@@ -20,7 +20,7 @@ function get_random_image() {
   //display the image
   document.getElementById(`image_shower`).src = `../assets/${selected_image}`
 }
-
+*/
 const game = () => {
   return (
     <div id='Game'>
