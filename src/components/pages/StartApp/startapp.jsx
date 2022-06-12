@@ -7,9 +7,9 @@ const startapp = () => {
   return (
         //<div id = 'FirstPage'> home</div>
     
-          <div class="startapp">
-          <img src={logos} alt="logo" class="logo"></img>
-          <div class="header-center">
+          <div className="startapp">
+          <img src={logos} alt="logo" className="logo"></img>
+          <div className="header-center">
           {/* <a href="#appdesign">AppDesign</a> */}
           <h3>AppDesign</h3>
           <h6 className="text-light">Fii propriul tau designer de interior</h6>
